@@ -1,0 +1,43 @@
+name: ptm_dash
+channels:
+  - cadwr-dms
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pip
+  # first our packages
+  # - pyhecdss
+  # - pydsm
+  # then basics
+  - pandas
+  - geopandas
+  # - scipy
+  # - copy
+  # - datetime
+  # - numpy
+  # - h5py=2.10 # because we use hdf5 v10 or below for DSM2 with szip from custom channel
+  # - hdf5=1.10.4=0
+  # then plot stuff
+  - panel
+  - hvplot
+  - holoviews
+  - geoviews
+  - ipywidgets
+  # - matplotlib.pyplot
+  # - PyPDF2
+  # - fpdf
+  # finally misc
+  - ipykernel
+  - autopep8
+  
+  # - click
+  # - pyyaml
+  # - autopep8
+  # - pip:
+    # - azure-batch #==11.0.0
+    # - azure-storage-blob #==12.9.0
+    # - azure-mgmt-resource #>=20.0.0
+    # - azure-identity #>=1.7.1
+    # - msrest #>=0.6.21
+# pip install --no-deps -e . after cloning to install this package
